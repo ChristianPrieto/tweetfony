@@ -5,3 +5,29 @@ index:
 ver_tweet:
     path: /tweet/{id}
     controller: App\Controller\TweetController::verTweet
+    methods: ["GET"]
+
+ver_usuario:
+   path: /users/{id}
+  controller: App\Controller\TweetController::verUsuario
+  methods: ["GET"]
+
+post_usuario:
+  path: /users
+  controller: App\Controller\TweetController::postUsuario
+  methods: ["POST"]
+
+post_tweets:
+  path: /tweet
+  controller: App\Controller\TweetController::postTweet
+  methods: ["POST"]
+
+put_user:
+  path: /users/{id}
+  controller: App\Controller\TweetController::putUsuario
+  methods: ["PUT"]
+
+put_tweet:
+  path: /tweet/{id}
+  controller: App\Controller\TweetController::putTweet
+  methods: ["PUT"]
