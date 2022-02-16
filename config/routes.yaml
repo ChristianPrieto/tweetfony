@@ -4,17 +4,17 @@ index:
 
 ver_tweet:
     path: /tweet/{id}
-    controller: App\Controller\TweetController::verTweet
+    controller: App\Controller\TweetController::getTweet
     methods: ["GET"]
 
 ver_usuario:
    path: /users/{id}
-  controller: App\Controller\TweetController::verUsuario
+  controller: App\Controller\TweetController::getTweetfonyUser
   methods: ["GET"]
 
 post_usuario:
   path: /users
-  controller: App\Controller\TweetController::postUsuario
+  controller: App\Controller\TweetController::postTweetfonyUser
   methods: ["POST"]
 
 post_tweets:
@@ -24,10 +24,20 @@ post_tweets:
 
 put_user:
   path: /users/{id}
-  controller: App\Controller\TweetController::putUsuario
+  controller: App\Controller\TweetController::putTweetfonyUser
   methods: ["PUT"]
 
 put_tweet:
   path: /tweet/{id}
   controller: App\Controller\TweetController::putTweet
   methods: ["PUT"]
+
+delete_user:
+  path: /users/{id}
+  controller: App\Controller\TweetController::deleteTweetfonyUser
+  methods: ["DELETE"]
+
+delete_tweet:
+  path: /tweet/{id}
+  controller: App\Controller\TweetController::deleteTweet
+  methods: ["DELETE"]
